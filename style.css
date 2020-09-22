@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --clr-white: #fff;
+  --clr-light: #f8f9fa;
+  --clr-dark: #212529;
+  --clr-dark-sec: #333;
+  --clr-flamingo: #ff5d8f;
+  --clr-flamingo-darken: #f75588;
+  --section-padding: 3rem 0 4rem 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-dark);
+  min-height: 300vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1 > strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  border: 1px solid var(--clr-dark);
+  border-radius: 6px;
+  color: (var(--clr-dark));
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  color: var(--clr-white);
+  background-color: var(--clr-flamingo);
+  border: none;
+  transition: background-color 250ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-flamingo-darken);
+}
+
+p.whisper-text {
+  display: block;
+  font-weight: 300;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--clr-dark);
+  background-color: var(--clr-white);
+  z-index: 1000;
+}
+
+.navbar > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul.nav-list {
+  display: flex;
+}
+
+.navbar ul.nav-list li.nav-item {
+  margin: 0 8px;
+}
+
+li.nav-item a:hover,
+li.nav-item a:active {
+  color: var(--clr-dark-sec);
+  font-weight: 500;
+}
+
+/* Home */
+section.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home .scroll-me {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: -2.4rem;
+  transform: translateX(-50%);
+}
+
+/* About Me */
+section.about-me {
+  padding: var(--section-padding);
+  background: var(--clr-light);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-content img.profile-pic {
+  width: 10rem;
+}
