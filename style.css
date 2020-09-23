@@ -16,6 +16,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -92,6 +93,13 @@ p {
 .btn-primary:hover {
   color: var(--clr-white);
   background-color: var(--clr-flamingo-darken);
+}
+
+.btn-form {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .filter-btn {
@@ -266,8 +274,8 @@ section.portofolio {
 
 .portofolio .project-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
 
 .project-card {
@@ -286,7 +294,7 @@ section.portofolio {
 }
 
 .project-info .project-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -305,4 +313,107 @@ section.portofolio {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+/* Contact */
+section.contact {
+  padding: var(--section-padding);
+  background-color: var(--clr-light);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+}
+
+.contact-content h2 {
+  text-align: right;
+}
+
+.contact-form {
+  width: 70%;
+  padding: 2rem;
+  border: 1px solid var(--clr-dark);
+  border-radius: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  border: 1px solid var(--clr-dark-sec);
+  border-radius: 5px;
+  background-color: var(--clr-light);
+  margin-bottom: 0.8rem;
+  transition: border 250ms ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1px solid var(--clr-flamingo);
+}
+
+/* Footer */
+footer.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-media a > img {
+  width: 25px;
+  transform: scale(0.8);
+  margin-right: 5px;
+  transition: transform 250ms ease-in-out;
+}
+
+.social-media a:hover > img {
+  transform: scale(1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  .portofolio .project-wrapper {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  .project-info .project-title {
+    font-size: 1rem;
+    /* font-weight: 600; */
+  }
+
+  .project-info .project-desc {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
 }
