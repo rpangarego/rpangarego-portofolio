@@ -9,17 +9,23 @@
   <body>
     <nav class="navbar">
       <div class="container">
-        <img src="images/logo.png" alt="Ronaldo Pangarego." />
+        <img src="images/logo.png" alt="Me." />
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Portofolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#about-me" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portofolio" class="nav-link">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="container">
         <div class="home-content">
           <h2>Hello.</h2>
@@ -35,7 +41,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="container">
         <h3 class="section-title">About Me</h3>
         <div class="about-content">
@@ -57,13 +63,169 @@
               sequi est quos, deleniti veritatis a distinctio, ipsam debitis
               quibusdam cupiditate.
             </p>
+            <p>
+              Ipsam perspiciatis maiores iste accusamus. Mollitia odit culpa
+              neque esse iste deleniti veritatis a distinctio, ipsam debitis
+              quibusdam cupiditate.
+            </p>
             <a href="#" class="btn btn-primary">Download CV</a>
           </div>
         </div>
         <div class="scroll-me">
-          <p class="whisper-text">*keep scrolling*</p>
+          <!-- <p class="whisper-text">*keep scrolling*</p> -->
+          <p class="whisper-text">*awesome things below*</p>
         </div>
       </div>
     </section>
+
+    <section class="portofolio" id="portofolio">
+      <div class="container">
+        <h3 class="section-title">Portofolio</h3>
+        <div class="filter-project">
+          <ul class="filter-list">
+            <li class="filter-item active">
+              <a class="filter-btn" data-filter="all">All</a>
+            </li>
+            <li class="filter-item">
+              <a class="filter-btn" data-filter="html-css">HTML & CSS</a>
+            </li>
+            <li class="filter-item">
+              <a class="filter-btn" data-filter="javascript">Javascript</a>
+            </li>
+            <li class="filter-item">
+              <a class="filter-btn" data-filter="php">PHP</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-wrapper">
+          <div class="project-card" data-category="html-css">
+            <img src="images/project1.png" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">HTML & CSS</span>
+              <h4 class="project-title">Pizza House Landing Page</h4>
+              <p class="project-desc">
+                Sapiente quidem id accusantium maxime consectetur quae quas
+                expedita aliquam voluptates, et maiores magni, officiis,
+                voluptatum modi perferendis ut praesentium!
+              </p>
+              <hr class="line-break" />
+              <div class="links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="html-css javascript">
+            <img src="images/project2.jpg" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">HTML & CSS</span>
+              <span class="badge">Javascript</span>
+              <h4 class="project-title">Travelly Landing Page</h4>
+              <p class="project-desc">
+                Sapiente quidem id accusantium maxime consectetur quae quas
+                expedita aliquam voluptates, et maiores magni, officiis,
+                voluptatum modi perferendis ut praesentium!
+              </p>
+              <hr class="line-break" />
+              <div class="links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="javascript reactjs">
+            <img src="images/project3.png" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">Javascript</span>
+              <span class="badge">ReactJS</span>
+              <h4 class="project-title">Instagram Clone with ReactJS</h4>
+              <p class="project-desc">
+                Sapiente quidem id accusantium maxime consectetur quae quas
+                expedita aliquam voluptates, et maiores magni, officiis,
+                voluptatum modi perferendis ut praesentium!
+              </p>
+              <hr class="line-break" />
+              <div class="links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-category="javascript reactjs nodejs mongodb"
+          >
+            <img src="images/project4.png" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">ReactJS</span>
+              <span class="badge">NodeJS</span>
+              <span class="badge">MongoDB</span>
+              <h4 class="project-title">Popcorn Store</h4>
+              <p class="project-desc">
+                Sapiente quidem id accusantium maxime consectetur quae quas
+                expedita aliquam voluptates, et maiores magni, officiis,
+                voluptatum modi perferendis ut praesentium!
+              </p>
+              <hr class="line-break" />
+              <div class="links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-category="javascript reactjs nodejs mongodb"
+          >
+            <img src="images/project5.png" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">ReactJS</span>
+              <span class="badge">NodeJS</span>
+              <span class="badge">MongoDB</span>
+              <h4 class="project-title">Tinder Clone with MERN Stack</h4>
+              <p class="project-desc">
+                Sapiente quidem id accusantium maxime consectetur quae quas
+                expedita aliquam voluptates, et maiores magni, officiis,
+                voluptatum modi perferendis ut praesentium!
+              </p>
+              <hr class="line-break" />
+              <div class="links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="php laravel">
+            <img src="images/project6.png" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">PHP</span>
+              <span class="badge">Laravel</span>
+              <h4 class="project-title">Green House Store</h4>
+              <p class="project-desc">
+                Sapiente quidem id accusantium maxime consectetur quae quas
+                expedita aliquam voluptates, et maiores magni, officiis,
+                voluptatum modi perferendis ut praesentium!
+              </p>
+
+              <hr class="line-break" />
+              <div class="links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact"></section>
+
+    <script src="script.js"></script>
   </body>
 </html>
