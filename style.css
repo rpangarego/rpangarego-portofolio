@@ -7,7 +7,8 @@
   --clr-dark-sec: #333;
   --clr-flamingo: #ff5d8f;
   --clr-flamingo-darken: #f75588;
-  --section-padding: 3rem 0 4rem 0;
+  --section-padding: 2.5rem 0 4rem 0;
+  --section-padding-sm: 1.8rem 0 2.5rem 0;
   --border-debug: 1px solid red;
 }
 
@@ -104,7 +105,6 @@ p {
 
 .filter-btn {
   font-size: 1rem;
-
   padding: 0.5rem 0;
   color: var(--clr-dark);
   background: transparent;
@@ -146,7 +146,7 @@ p.whisper-text {
   font-size: 0.8rem;
   border-radius: 5px;
   margin-bottom: 1rem;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 /* Navbar */
@@ -221,20 +221,9 @@ section.about-me {
 .about-content img.profile-pic {
   position: relative;
   margin: 0 auto;
-  width: 10rem;
+  width: 12rem;
   border-radius: 50%;
-  border: 2px solid var(--clr-flamingo);
-}
-
-.about-content img.profile-pic::before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 1rem;
-  left: 1rem;
-  border-radius: 50%;
-  border: 1px dotted var(--clr-flamingo);
+  border: 1.2px solid var(--clr-flamingo);
 }
 
 .profile-desc {
@@ -275,7 +264,7 @@ section.portofolio {
 .portofolio .project-wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .project-card {
@@ -387,33 +376,142 @@ footer p {
   h1 {
     font-size: 2.3rem;
   }
-
   h2 {
     font-size: 2rem;
   }
-
   h3 {
     font-size: 1.5rem;
   }
-
   a {
     font-size: 0.9rem;
   }
 
   .portofolio .project-wrapper {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 1.2rem;
   }
 
   .project-info .project-title {
     font-size: 1rem;
-    /* font-weight: 600; */
   }
 
   .project-info .project-desc {
     font-size: 0.9rem;
   }
 
+  .contact-content {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .contact-content h2 {
+    text-align: center;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+  }
+
   footer {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+
+  .filter-btn {
+    font-size: 0.9rem;
+  }
+
+  p.whisper-text {
+    font-size: 0.9rem;
+    display: block;
+    font-weight: 300;
+  }
+
+  .navbar > div {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar > div img {
+    margin-bottom: 8px;
+  }
+
+  .navbar ul.nav-list {
+    /* display: flex; */
+    justify-content: space-around;
+  }
+
+  .navbar ul.nav-list li.nav-item {
+    margin: 0;
+  }
+
+  /* About */
+  .about-content {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+
+  .about-content img.profile-pic {
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Portofolio */
+  .portofolio .project-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .portofolio .filter-list {
+    padding-bottom: 2.2rem;
+  }
+
+  .portofolio .filter-item {
+    margin-right: 1.2rem;
+  }
+
+  /* Contact */
+  section.contact {
+    padding: var(--section-padding-sm);
+  }
+
+  .contact-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  /* Footer */
+  footer.container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-media {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
   }
 }
