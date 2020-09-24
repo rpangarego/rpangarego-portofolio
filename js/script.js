@@ -4,7 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterItems = document.querySelectorAll(".filter-item");
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projects = document.querySelectorAll(".project-card");
+  const links = document.querySelectorAll('a[href*="#"]');
+  const navbar = document.querySelector("nav.navbar");
 
+  // smooth scroll event
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = link.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop;
+      scroll({
+        top: offsetTop - navbar.clientHeight,
+        behavior: "smooth"
+      });
+    });
+  });
+
+  // set opacity to scroll-me
   document.addEventListener("scroll", (e) => {
     let viewportHeight = window.innerHeight;
     let scrollPosition = window.pageYOffset + 60;
