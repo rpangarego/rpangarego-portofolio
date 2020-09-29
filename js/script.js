@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // set opacity to scroll-me
   document.addEventListener("scroll", (e) => {
     let viewportHeight = window.innerHeight;
-    let scrollPosition = window.pageYOffset + 60;
+    let scrollPosition =
+      window.pageYOffset + (Math.round(navbar.clientHeight) + 5);
 
     let opacityValue = (viewportHeight - scrollPosition) / viewportHeight;
     scrollMe.style.opacity = opacityValue.toFixed(2);
