@@ -294,8 +294,11 @@
         <div class="contact-content">
           <h2>Get in touch.</h2>
           <div class="contact-form">
-            <form name="contact" method="POST" netlify>
+            <form name="contact" method="POST" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
               <div class="form-group">
+                <div class="hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </div>
                 <input
                   type="text"
                   name="name"
@@ -324,6 +327,7 @@
                   placeholder="Message"
                 ></textarea>
               </div>
+              <div class="captcha-input" data-netlify-recaptcha="true"></div>
               <button type="submit" class="btn btn-primary btn-form">
                 Send
               </button>
