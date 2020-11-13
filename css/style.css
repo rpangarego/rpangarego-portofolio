@@ -100,6 +100,10 @@ table tr th.skills {
   border: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn {
   border: 1px solid var(--clr-dark);
   border-radius: 6px;
@@ -381,6 +385,11 @@ section.contact {
 .form-group input:focus,
 .form-group textarea:focus {
   border: 1px solid var(--clr-flamingo);
+}
+
+form .captcha-input {
+  width: 100%;
+  margin-bottom: 0.8rem;
 }
 
 /* Footer */
