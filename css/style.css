@@ -81,6 +81,26 @@ p {
   margin-bottom: 1rem;
 }
 
+table {
+  margin-bottom: 2.4rem;
+}
+
+table tr th,
+table tr td {
+  text-align: left;
+  font-weight: normal;
+  /* width: 40px; */
+  padding: 8px 20px 8px 0;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+table tr th.skills {
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+}
+
 .btn {
   border: 1px solid var(--clr-dark);
   border-radius: 6px;
@@ -129,7 +149,7 @@ h3.section-title::before {
   position: absolute;
   bottom: -5px;
   width: 110%;
-  height: 5px;
+  height: 4px;
   background-color: var(--clr-flamingo);
 }
 
@@ -236,8 +256,9 @@ section.about-me {
   border: 1.2px solid var(--clr-flamingo);
 }
 
-.profile-desc {
+.profile-desc p {
   align-self: center;
+  text-indent: 26px;
 }
 
 .profile-desc p:nth-of-type(3) {
@@ -284,8 +305,10 @@ section.portofolio {
 }
 
 .project-card img {
+  object-fit: cover;
   width: 100%;
-  max-height: 250px;
+  height: 250px;
+  /* border-bottom: 1px solid var(--clr-dark); */
 }
 
 .project-card .project-info {
@@ -298,8 +321,10 @@ section.portofolio {
   margin-bottom: 0.5rem;
 }
 
-.project-info .project-desc {
-  font-size: 0.9rem;
+.project-info p.project-desc {
+  font-size: 0.925rem;
+  min-height: 70px;
+  text-indent: 0;
 }
 
 .project-info hr.line-break {
@@ -415,6 +440,16 @@ footer p {
     font-size: 0.9rem;
   }
 
+  .about-content {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+
+  .about-content img.profile-pic {
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+
   .portofolio .project-wrapper {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-gap: 1.2rem;
@@ -458,6 +493,10 @@ footer p {
   }
   a {
     font-size: 1rem;
+  }
+
+  h3.section-title {
+    font-size: 1.4rem;
   }
 
   .filter-btn {
@@ -504,15 +543,15 @@ footer p {
   }
 
   /* About */
-  .about-content {
+  /* .about-content {
     grid-template-columns: 1fr;
     margin-bottom: 3rem;
-  }
+  } */
 
-  .about-content img.profile-pic {
+  /* .about-content img.profile-pic {
     width: 10rem;
     margin-bottom: 2rem;
-  }
+  } */
 
   /* Portofolio */
   .portofolio .project-wrapper {

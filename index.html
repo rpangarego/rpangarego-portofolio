@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <title>Ronaldo Pangarego's Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ronaldo Pangarego's Portfolio</title>
   </head>
   <body>
     <nav class="navbar">
@@ -22,7 +22,7 @@
             <a href="#about-me" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#portofolio" class="nav-link">Portofolio</a>
+            <a href="#portofolio" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
@@ -52,40 +52,47 @@
         <h3 class="section-title">About Me</h3>
         <div class="about-content">
           <img
-            src="images/profile-pic.jpg"
-            alt="Profile Picture"
+            src="images/ronaldo-pangarego.jpg"
+            alt="Ronaldo Pangarego"
             class="profile-pic"
           />
           <div class="profile-desc">
             <p>
-              Nesciunt debitis facilis, voluptas odio similique maxime aperiam
-              harum illum praesentium quibusdam a temporibus impedit voluptatem
-              dolor? Ipsam perspiciatis maiores iste accusamus. Mollitia odit
-              culpa neque esse iste sequi est quos, deleniti veritatis a
-              distinctio.
+              Hi there! My name is Ronaldo Pangarego. I am a Frontend Developer and currently live in Pontianak, Indonesia. For the last 6 months, I have spent time learning new things, and I have developed some projects using the knowledge I've acquired to build applications I never imagined I could before. I love writing code for the frontend of software application. I enjoy creating user-friendly, creative, amazing websites which is not only functional but also beautiful with elegant experience.
             </p>
             <p>
-              Suscipit illum minus amet mollitia odit culpa neque esse iste
-              sequi est quos, deleniti veritatis a distinctio, ipsam debitis
-              quibusdam cupiditate.
+              I am a fast learner, a highly organized, self-motivated, creative person, and always learning new things. Whenever I am not studying or working, I'm probably watching movies/tv-series or gardening in my spare time.
             </p>
             <p>
-              Ipsam perspiciatis maiores iste accusamus. Mollitia odit culpa
-              neque esse iste deleniti veritatis a distinctio, ipsam debitis
-              quibusdam cupiditate.
+              <table>
+                <tr><th colspan="2" class="skills"> Skills</th></tr>
+                <tr>
+                  <th>Languages</th>
+                  <td>HTML, CSS, Javascript and PHP</td>
+                </tr>
+                <tr>
+                  <th>Frameworks/Libraries</th>
+                  <td>Bootstrap, MaterialUI, Tailwind, ReactJS, NodeJS, ExpressJS and Laravel </td>
+                </tr>
+                <tr>
+                  <th>Storage/Database</th>
+                  <td>MySQL, MongoDB and Firebase</td>
+                </tr>
+                <tr>
+                  <th>Tools</th>
+                  <td>VS Code, Sublime Text3, Git, Github, Adobe Illustrator and Figma</td>
+                </tr>
+              </table>
             </p>
-            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="#" class="btn btn-primary" download>Download CV</a>
           </div>
-        </div>
-        <div class="scroll-me">
-          <p class="whisper-text">*awesome things below*</p>
         </div>
       </div>
     </section>
 
     <section class="portofolio" id="portofolio">
       <div class="container">
-        <h3 class="section-title">Portofolio</h3>
+        <h3 class="section-title">Portfolio</h3>
         <div class="filter-project">
           <ul class="filter-list">
             <li class="filter-item active">
@@ -104,58 +111,114 @@
         </div>
 
         <div class="project-wrapper">
+          <div class="project-card" data-category="javascript reactjs firebase">
+            <img src="images/bachot-app.webp" alt="project-image" />
+            <div class="project-info">
+              <span class="badge">Javascript</span>
+              <span class="badge">ReactJS</span>
+              <span class="badge">Firebase</span>
+              <h4 class="project-title">Bachot Chatting App</h4>
+              <p class="project-desc">
+                Bachot is a chatting app where users can create a room or join
+                an available room to start chatting with their friends.
+              </p>
+              <hr class="line-break" />
+              <div class="links">
+                <a
+                  href="https://bachot-app.firebaseapp.com/"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/rpangarego/bachot-app"
+                  target="_blank"
+                  class="project-link"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
           <div class="project-card" data-category="html-css">
-            <img src="images/project1.webp" alt="project-image" />
+            <img src="images/pizza-house.webp" alt="project-image" />
             <div class="project-info">
               <span class="badge">HTML & CSS</span>
               <h4 class="project-title">Pizza House Landing Page</h4>
               <p class="project-desc">
-                Sapiente quidem id accusantium maxime consectetur quae quas
-                expedita aliquam voluptates, et maiores magni, officiis,
-                voluptatum modi perferendis ut praesentium!
+                A simple landing page for pizza restaurant to introduce and
+                promote their business online. Built with HTML and CSS.
               </p>
               <hr class="line-break" />
               <div class="links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">Source Code</a>
+                <a
+                  href="https://pizza-house.netlify.app/"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/rpangarego/pizza-house"
+                  target="_blank"
+                  class="project-link"
+                  >Source Code</a
+                >
               </div>
             </div>
           </div>
 
           <div class="project-card" data-category="html-css javascript">
-            <img src="images/project2.webp" alt="project-image" />
+            <img src="images/barbarshop.webp" alt="project-image" />
             <div class="project-info">
               <span class="badge">HTML & CSS</span>
               <span class="badge">Javascript</span>
-              <h4 class="project-title">Travelly Landing Page</h4>
+              <h4 class="project-title">Barbarshop Landing Page</h4>
               <p class="project-desc">
-                Sapiente quidem id accusantium maxime consectetur quae quas
-                expedita aliquam voluptates, et maiores magni, officiis,
-                voluptatum modi perferendis ut praesentium!
+                This landing page is built to introduce their barbershop
+                business to the community also contain services and testimonial.
               </p>
               <hr class="line-break" />
               <div class="links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">Source Code</a>
+                <a
+                  href="https://barbarshop.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/rpangarego/barbarshop-landing-page"
+                  target="_blank"
+                  class="project-link"
+                  >Source Code</a
+                >
               </div>
             </div>
           </div>
 
           <div class="project-card" data-category="javascript reactjs">
-            <img src="images/project3.webp" alt="project-image" />
+            <img src="images/twitter-clone.webp" alt="project-image" />
             <div class="project-info">
               <span class="badge">Javascript</span>
               <span class="badge">ReactJS</span>
-              <h4 class="project-title">Instagram Clone with ReactJS</h4>
+              <h4 class="project-title">Twitter Clone</h4>
               <p class="project-desc">
-                Sapiente quidem id accusantium maxime consectetur quae quas
-                expedita aliquam voluptates, et maiores magni, officiis,
-                voluptatum modi perferendis ut praesentium!
+                This clone has a basic feature such as create a tweet, read
+                tweets or delete a tweet. Built with ReactJS and Firebase
               </p>
               <hr class="line-break" />
               <div class="links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">Source Code</a>
+                <a
+                  href="https://twitter-clone-91366.web.app"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/rpangarego/twitter-clone"
+                  target="_blank"
+                  class="project-link"
+                  >Source Code</a
+                >
               </div>
             </div>
           </div>
@@ -164,64 +227,60 @@
             class="project-card"
             data-category="javascript reactjs nodejs mongodb"
           >
-            <img src="images/project4.webp" alt="project-image" />
+            <img src="images/tinder-clone.webp" alt="project-image" />
             <div class="project-info">
+              <span class="badge">Javascript</span>
               <span class="badge">ReactJS</span>
-              <span class="badge">NodeJS</span>
-              <span class="badge">MongoDB</span>
-              <h4 class="project-title">Popcorn Store</h4>
+              <h4 class="project-title">Tinder Clone</h4>
               <p class="project-desc">
-                Sapiente quidem id accusantium maxime consectetur quae quas
-                expedita aliquam voluptates, et maiores magni, officiis,
-                voluptatum modi perferendis ut praesentium!
+                This clone allows users to swipe left or right like the real
+                application. Built with ReactJS and Firebase
               </p>
               <hr class="line-break" />
               <div class="links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">Source Code</a>
+                <a
+                  href="https://tinder-clone-4b812.web.app"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/rpangarego/tinder-clone"
+                  target="_blank"
+                  class="project-link"
+                  >Source Code</a
+                >
               </div>
             </div>
           </div>
 
-          <div
-            class="project-card"
-            data-category="javascript reactjs nodejs mongodb"
-          >
-            <img src="images/project5.webp" alt="project-image" />
+          <div class="project-card" data-category="html-css php">
+            <img src="images/spk-laptop.webp" alt="project-image" />
             <div class="project-info">
-              <span class="badge">ReactJS</span>
-              <span class="badge">NodeJS</span>
-              <span class="badge">MongoDB</span>
-              <h4 class="project-title">Tinder Clone with MERN Stack</h4>
-              <p class="project-desc">
-                Sapiente quidem id accusantium maxime consectetur quae quas
-                expedita aliquam voluptates, et maiores magni, officiis,
-                voluptatum modi perferendis ut praesentium!
-              </p>
-              <hr class="line-break" />
-              <div class="links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">Source Code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="php laravel">
-            <img src="images/project6.webp" alt="project-image" />
-            <div class="project-info">
+              <span class="badge">HTML & CSS</span>
               <span class="badge">PHP</span>
-              <span class="badge">Laravel</span>
-              <h4 class="project-title">Green House Store</h4>
+              <h4 class="project-title">
+                DSS using SAW Method
+              </h4>
               <p class="project-desc">
-                Sapiente quidem id accusantium maxime consectetur quae quas
-                expedita aliquam voluptates, et maiores magni, officiis,
-                voluptatum modi perferendis ut praesentium!
+                A decision support system to help students to choose a laptop
+                based on their needs using Simple Additive Weighting Method
               </p>
 
               <hr class="line-break" />
               <div class="links">
-                <a href="#" class="project-link">Live Demo</a>
-                <a href="#" class="project-link">Source Code</a>
+                <a
+                  href="http://spklaptopsaw.epizy.com"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/rpangarego/spk-laptop"
+                  target="_blank"
+                  class="project-link"
+                  >Source Code</a
+                >
               </div>
             </div>
           </div>
@@ -235,7 +294,7 @@
         <div class="contact-content">
           <h2>Get in touch.</h2>
           <div class="contact-form">
-            <form>
+            <form name="contact" method="POST" netlify>
               <div class="form-group">
                 <input
                   type="text"
@@ -277,19 +336,16 @@
     <footer>
       <div class="container">
         <div class="social-media">
-          <a href="twitter.com"
-            ><img src="images/social/twitter-sm.png" alt="twitter"
+          <a href="https://www.github.com/rpangarego" target="_blank"
+            ><img src="images/social/github-sm.png" alt="github"
           /></a>
-          <a href="instagram.com"
+          <a href="https://www.instagram.com/rpangarego" target="_blank"
             ><img src="images/social/instagram-sm.png" alt="instagram"
           /></a>
-          <a href="linkedin.com"
+          <a href="https://www.linkedin.com" target="_blank"
             ><img src="images/social/linkedin-sm.png" alt="linkedin"
           /></a>
-          <a href="dribbble.com"
-            ><img src="images/social/dribbble-sm.png" alt="dribbble"
-          /></a>
-          <p>Email: ronaldo.pangarego@gmail.com</p>
+          <p>Email: <a href="mailto:ronaldo.pangarego@gmail.com">ronaldo.pangarego@gmail.com</a></p>
         </div>
         <div class="copyright">
           <p>Copyright &copy; 2020. All Rights Reversed</p>
