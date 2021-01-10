@@ -108,7 +108,7 @@ table tr th.skills {
   border: 1px solid var(--clr-dark);
   border-radius: 6px;
   color: (var(--clr-dark));
-  padding: 10px 20px;
+  padding: 8px 14px;
 }
 
 .btn-primary {
@@ -248,13 +248,14 @@ section.about-me {
   display: grid;
   grid-template-columns: 20rem 1fr;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 4rem;
 }
 
 .about-content img.profile-pic {
   position: relative;
   margin: 0 auto;
+  margin-top: 1rem;
   width: 12rem;
   border-radius: 50%;
   border: 1.2px solid var(--clr-flamingo);
