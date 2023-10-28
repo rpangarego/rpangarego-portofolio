@@ -19,8 +19,7 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#portofolio" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
         </ul>
       </div>
     </nav>
@@ -30,10 +29,10 @@
         <div class="home-content">
           <h2>Hello.</h2>
           <h1>I'm <strong>Ronaldo Pangarego</strong></h1>
-          <h3>a Data Analyst</h3>
+          <h3>Data Analyst</h3>
           <br />
-          <a href="#about-me" class="btn btn-primary">more about me...</a>
-          <!-- <a href="#contact" class="btn btn-primary">Contact Me</a> -->
+          <a href="#about-me" class="btn btn-primary">About Me</a>
+          <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
         </div>
         <div class="scroll-me">
           <p class="whisper-text">scroll me</p>
@@ -56,24 +55,14 @@
               Hi there, My name is Ronaldo Pangarego. I am a Data Analyst and currently live in Pontianak, Indonesia. Over the past few months, I've been on a journey of continuous learning, developing my skills in data analysis. It's been an exciting ride, as I've learned to take complex dataset and turn it into clear, actionable insights. I'm also passionate about machine learning. It's a world full of possibilities where data can be used to predict and solve problems.
             </p>
             <p>
-              Within this portfolio, you'll discover a bunch of projects where I've done. Each one is a unique story of how data can be transformed into knowledge. Whether it's understanding market trends, customer behavior, or forecasting the future, I've had the pleasure of simplifying data into meaningful stories. 
-            </p>
-            <p>
               I'm a learner, a highly organized, self-motivated, creative person, and always like learning new things. Whenever I'm not studying or working, I'm probably watching movies/tv-series or gardening in my spare time.
             </p>
-            <!-- <p>
-              I believe that data isn't just about numbers; it's about discovering things you never knew before. So, take a look at my work, and let's journey through the world of data together. If you want to collaborate or chat about data, feel free to get in touch!"
-            </p> -->
             <p>
               <table>
                 <!-- <tr><th colspan="2" class="skills"> Skills</th></tr> -->
-                <!-- <tr>
-                  <th>Programming Languages</th>
-                  <td>HTML, CSS, Javascript, PHP, Python</td>
-                </tr> -->
                 <tr>
-                  <th>Languages</th>
-                  <td>: Indonesia, English</td>
+                  <th>Programming Languages</th>
+                  <td>: SQL, PHP, Javascript, Python</td>
                 </tr>
                 <tr>
                   <th>Hard Skills</th>
@@ -81,39 +70,23 @@
                 </tr>
                 <tr>
                   <th>Soft Skills</th>
-                  <td>: Analytical Thinking, Time Management, Problem Solving</td>
+                  <td>: Analytical Thinking, Time Management, Problem Solving, Creative</td>
                 </tr>
                 <tr>
                   <th>Tools</th>
-                  <td>: Python, SQL, Tableau, Excel Spreadsheet, Google Data Studio</td>
+                  <td>: Spreadsheet, Git, GitHub, Tableau, Google Data Studio</td>
                 </tr>
               </table>
             </p>
-            <a href="CV_Fullstack Web Dev_Ronaldo Pangarego.pdf" class="btn btn-primary" download>Download CV</a>
+            <a href="CV_Data Analyst_Ronaldo Pangarego.pdf" class="btn btn-primary" download>Download CV</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="portofolio" id="portofolio">
+    <section class="portofolio" id="portfolio">
       <div class="container">
         <h3 class="section-title">Portfolio</h3>
-        <!-- <div class="filter-project">
-          <ul class="filter-list">
-            <li class="filter-item active">
-              <a class="filter-btn" data-filter="all">All</a>
-            </li>
-            <li class="filter-item">
-              <a class="filter-btn" data-filter="html-css">HTML & CSS</a>
-            </li>
-            <li class="filter-item">
-              <a class="filter-btn" data-filter="javascript">Javascript</a>
-            </li>
-            <li class="filter-item">
-              <a class="filter-btn" data-filter="php">PHP</a>
-            </li>
-          </ul>
-        </div> -->
 
         <div class="project-wrapper">
           <div class="project-card">
@@ -147,7 +120,7 @@
           <div class="project-card">
             <img src="images/cinema.jpg" alt="project-image" />
             <div class="project-info">
-              <h4 class="project-title">A Movie Recommendation System</h4>
+              <h4 class="project-title">Movie Recommendation System</h4>
               <p class="project-desc">
                 Developed a personalized movie recommendation algorithm that enhances user 
                 experiences by suggesting films based on their preferences and behaviors.
@@ -183,6 +156,7 @@
               <div class="links">
                 <a
                   href="https://www.kaggle.com/code/ronaldopangarego/e-commerce-customer-churn-analysis-and-prediction"
+                  target="_blank"
                   class="project-link"
                   >Python Notebook</a
                 >
@@ -280,55 +254,6 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h3 class="section-title">Contact</h3>
-        <div class="contact-content">
-          <h2>Get in touch.</h2>
-          <div class="contact-form">
-            <form name="contact" method="POST" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
-              <div class="form-group">
-                <div class="hidden">
-                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </div>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="form-style"
-                  placeholder="Your name"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="form-style"
-                  placeholder="Email"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="3"
-                  class="form-textarea"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <div class="captcha-input" data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn btn-primary btn-form">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <div class="container">
         <div class="social-media">
@@ -338,7 +263,10 @@
           <a href="https://www.instagram.com/rpangarego" target="_blank"
             ><img src="images/social/instagram-sm.png" alt="instagram"
           /></a>
-          <a href="https://www.linkedin.com" target="_blank"
+          <a href="https://www.medium.com/@rpangarego" target="_blank"
+            ><img src="images/social/medium.png" alt="medium"
+          /></a>
+          <a href="https://www.linkedin.com/in/rpangarego" target="_blank"
             ><img src="images/social/linkedin-sm.png" alt="linkedin"
           /></a>
           <p>Email: <a href="mailto:ronaldo.pangarego@gmail.com">ronaldo.pangarego@gmail.com</a></p>
